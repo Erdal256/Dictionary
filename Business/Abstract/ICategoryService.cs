@@ -11,5 +11,8 @@ namespace Business.Abstract
     {
         List<Category> GetList();
         void CategoryAdd(Category category);
+        Category GetByID(int id);//dışarıdan ıd değişkeni alınacak.
+        void CategoryDelete(Category category);
+        void CategoryUpdate(Category category);
     }
 }

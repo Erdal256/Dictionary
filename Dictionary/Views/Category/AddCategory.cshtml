@@ -7,17 +7,17 @@
 <br />
 @using (Html.BeginForm("AddCategory", "Category", FormMethod.Post))
 {
-<dvi class="form-group">
-    @Html.Label("Kategori Adı")
-    @Html.TextBoxFor(x => x.CetegoryName)
-    @Html.ValidationMessageFor(x => x.CetegoryName)
-    <br /> <br />
-    @Html.Label("Açıklamayı Yazınız")
-    @Html.TextBoxFor(x => x.CetegoryDescription)
-    @Html.ValidationMessageFor(x => x.CetegoryDescription)
-    <br /> <br />
-    <button>Kaydet</button>
-</dvi>
+    <div class="form-group">
+        @Html.Label("Kategori Adı")
+        @Html.TextBoxFor(x => x.CetegoryName)
+        @Html.ValidationMessageFor(x => x.CetegoryName)
+        <br /> <br />
+        @Html.Label("Açıklamayı Yazınız")
+        @Html.TextBoxFor(x => x.CetegoryDescription)
+        @Html.ValidationMessageFor(x => x.CetegoryDescription)
+        <br /> <br />
+        <button>Kaydet</button>
+    </div>
 }
 
 @*<form class="form-group" method="post">

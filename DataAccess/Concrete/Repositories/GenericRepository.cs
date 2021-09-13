@@ -14,32 +14,37 @@ namespace DataAccess.Concrete.Repositories
 
         Context c = new Context();
 
-        DbSet<T> _objext;
+        DbSet<T> _object;
 
         public GenericRepository()
         {
-            _objext = c.Set<T>();
+            _object = c.Set<T>();
         }
         public void Delete(T p)
         {
-            _objext.Remove(p);
+            _object.Remove(p);
             c.SaveChanges();
+        }
+
+        public T Get(Expression<Func<T, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter);
         }
 
         public void Insert(T p)
         {
-            _objext.Add(p);
+            _object.Add(p);
             c.SaveChanges();
         }
 
         public List<T> List()
         {
-            return _objext.ToList();
+            return _object.ToList();
         }
 
         public List<T> List(Expression<Func<T, bool>> filter)
         {
-            return _objext.Where(filter).ToList();
+            return _object.Where(filter).ToList();
         }
 
         public void Update(T p)
