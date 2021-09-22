@@ -79,6 +79,14 @@
     <Compile Include="Migrations\202109182008468_x3_writertitle.designer.cs">
       <DependentUpon>202109182008468_x3_writertitle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109221822238_writer_image.cs" />
+    <Compile Include="Migrations\202109221822238_writer_image.designer.cs">
+      <DependentUpon>202109221822238_writer_image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109221855062_x4_writerstatus.cs" />
+    <Compile Include="Migrations\202109221855062_x4_writerstatus.designer.cs">
+      <DependentUpon>202109221855062_x4_writerstatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -101,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109182008468_x3_writertitle.resx">
       <DependentUpon>202109182008468_x3_writertitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109221822238_writer_image.resx">
+      <DependentUpon>202109221822238_writer_image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109221855062_x4_writerstatus.resx">
+      <DependentUpon>202109221855062_x4_writerstatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
