@@ -78,7 +78,7 @@
                             }
                             <tr>
                                 <td>
-                                    #@item.HeadingID
+                                    @item.HeadingID
                                 </td>
                                 <td>
                                     <a>
@@ -105,12 +105,12 @@
                                         </i>
                                         Yazılar
                                     </a>
-                                    <a class="btn btn-info btn-sm" href="#">
+                                    <a class="btn btn-info btn-sm" href="/Heading/EditHeading/@item.HeadingID">
                                         <i class="fas fa-pencil-alt">
                                         </i>
                                         Düzenle
                                     </a>
-                                    <a class="btn btn-danger btn-sm" href="#">
+                                    <a class="btn btn-danger btn-sm" href="/Heading/DeleteHeading/@item.HeadingID">
                                         <i class="fas fa-trash">
                                         </i>
                                         Sil

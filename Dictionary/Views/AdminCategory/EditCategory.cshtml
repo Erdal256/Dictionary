@@ -7,19 +7,19 @@
 <h2>Kategori Güncelleme Sayfası</h2>
 @using (Html.BeginForm("EditCategory", "AdminCategory", FormMethod.Post))
 {
-<div class="form-group">
-    @Html.Label("Kategori ID")
-    @Html.TextBoxFor(x => x.CategoryID, new { @class = "form-control" })
-    <br />
-    @Html.Label("Kategori Adı")
-    @Html.TextBoxFor(x => x.CetegoryName, new { @class = "form-control" })
-    <br /> 
-    @Html.Label("Kategori Açıklaması")
-    @Html.TextAreaFor(x => x.CetegoryDescription, new { @class = "form-control" })
-    <br />
-    <button class="btn btn-success">Güncelle</button>
+    <div class="form-group">
+        @Html.Label("Kategori ID")
+        @Html.TextBoxFor(x => x.CategoryID, new { @class = "form-control" })
+        <br />
+        @Html.Label("Kategori Adı")
+        @Html.TextBoxFor(x => x.CetegoryName, new { @class = "form-control" })
+        <br />
+        @Html.Label("Kategori Açıklaması")
+        @Html.TextAreaFor(x => x.CetegoryDescription, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-success">Güncelle</button>
 
 
-</div>
+    </div>
 }
 

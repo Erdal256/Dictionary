@@ -14,7 +14,7 @@ namespace Entities.Concrete
         [StringLength(1000)]
         public string ContentValue { get; set; } // içerik Değeri
         public DateTime ContentDate { get; set; } //İçeriğpin Tarihi , içerik ne zaman yazıldı ?
-
+        public bool ContentStatus { get; set; }
         public int HeadingID { get; set; }
         public virtual Heading Heading { get; set; }
 

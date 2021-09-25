@@ -14,7 +14,7 @@ namespace Entities.Concrete
         [StringLength(50)]
         public string HeadingName { get; set; } // Başlık Adı
         public DateTime HeadingDate { get; set; } // Başlığın Oluşturulma tarihi
-
+        public bool HeadingStatus { get; set; }
         public int CategoryID { get; set; }
         public virtual Category Category{ get; set; } // ilgili sınıftan, ilgili değer
 
