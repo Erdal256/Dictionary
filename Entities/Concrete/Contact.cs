@@ -17,6 +17,7 @@ namespace Entities.Concrete
         public string UserMail { get; set; } //Kullanıcı Maili
         [StringLength(50)]
         public string Subject { get; set; } // Konu
+        public DateTime ContactDate { get; set; }
         public string Message { get; set; } // Mesaj
     }
 }
