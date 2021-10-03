@@ -1,9 +1,10 @@
 ﻿@using Entities.Concrete
 @model List<Heading>
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "MyHeading";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
 }
+
 @{ string color = "";}
 <!DOCTYPE html>
 <html>
@@ -56,7 +57,7 @@
                     <tbody>
                         @foreach (var item in Model)
                         {
-                            if (item.Category.CetegoryName=="Dizi")
+                            if (item.Category.CetegoryName == "Dizi")
                             {
                                 color = "badge badge-warning";
                             }
@@ -82,7 +83,7 @@
                                 </td>
                                 <td>
                                     <a>
-                                       @item.HeadingName
+                                        @item.HeadingName
                                     </a>
                                     <br />
                                     <small>
@@ -128,6 +129,8 @@
 </body>
 </html>
 <a href="/Heading/AddHeading/" class="btn btn-primary">Yeni Başlık Girişi</a>
+
+
 
 
 
