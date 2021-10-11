@@ -27,9 +27,9 @@ namespace Business.Concrete
             throw new NotImplementedException();
         }
 
-        public void ContentyAdd(Content content)
+        public void ContentAdd(Content content)
         {
-            throw new NotImplementedException();
+            _contentdal.Insert(content);
         }
 
         public Content GetByID(int id)
@@ -39,7 +39,7 @@ namespace Business.Concrete
 
         public List<Content> GetList()
         {
-            throw new NotImplementedException();
+            return _contentdal.List();
         }
 
         public List<Content> GetListByHeadingID(int id)
