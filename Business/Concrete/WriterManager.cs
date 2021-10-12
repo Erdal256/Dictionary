@@ -38,7 +38,7 @@ namespace Business.Concrete
             _writerDal.Delete(writer);
         }
 
-        public void WriterUptdae(Writer writer)
+        public void WriterUpdate(Writer writer)
         {
             _writerDal.Update(writer);
         }

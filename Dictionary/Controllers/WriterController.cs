@@ -55,7 +55,7 @@ namespace Dictionary.Controllers
             ValidationResult results = writervalidator.Validate(p);
             if (results.IsValid)
             {
-                wm.WriterUptdae(p); //validate geçerliyse bu kısım çalışacak
+                wm.WriterUpdate(p); //validate geçerliyse bu kısım çalışacak
                 return RedirectToAction("Index");
             }
             else
