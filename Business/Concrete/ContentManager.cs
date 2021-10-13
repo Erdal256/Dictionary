@@ -37,9 +37,9 @@ namespace Business.Concrete
             throw new NotImplementedException();
         }
 
-        public List<Content> GetList()
+        public List<Content> GetList(string p)
         {
-            return _contentdal.List();
+            return _contentdal.List(x=>x.ContentValue.Contains(p));
         }
 
         public List<Content> GetListByHeadingID(int id)
