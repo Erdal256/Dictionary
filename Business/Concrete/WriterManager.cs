@@ -28,6 +28,21 @@ namespace Business.Concrete
             return _writerDal.List();
         }
 
+        public Writer GetWriter(string mail, string password)
+        {
+            return _writerDal.Get(x => x.WriterMail == mail && x.WriterPassword == password);
+        }
+
+        public void UpdatePasswordWriterPanel(Writer writer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateWriterPanel(Writer writer)
+        {
+            throw new NotImplementedException();
+        }
+
         public void WriterAdd(Writer writer)
         {
             _writerDal.Insert(writer);

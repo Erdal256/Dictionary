@@ -14,5 +14,8 @@ namespace Business.Abstract
         void WriterDelete(Writer writer);
         void WriterUpdate(Writer writer);
         Writer GetByID(int id);
+        Writer GetWriter(string mail, string password);
+        void UpdateWriterPanel(Writer writer);
+        void UpdatePasswordWriterPanel(Writer writer);
     }
 }
